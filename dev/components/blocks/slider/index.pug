@@ -1,0 +1,65 @@
+include ../route-description/index.pug
+
+- 
+    let routeList = {
+        items: [
+            {
+                image: 'img/card1.png',
+                title: 'День 1',
+                day: '15 июня',
+                text: [
+                    'lorem', 
+                    'lorem2',
+                    'lorem'
+                ], 
+                list: [
+                    'img/bottom-slider.png',
+                    'img/bottom-slider.png',
+                    'img/bottom-slider.png'
+                ]
+            },
+             {
+                image: 'img/card1.png',
+                title: 'День 1',
+                day: '15 июня',
+                text:  [
+                    'lorem'
+                ],
+                list: [
+                    'img/bottom-slider.png',
+                    'img/bottom-slider.png',
+                    'img/bottom-slider.png'
+                ]
+            },
+             {
+                image: 'img/card1.png',
+                title: 'День 1',
+                day: '15 июня',
+               text:  [
+                    'lorem'
+                ],
+                list: [
+                    'img/bottom-slider.png',
+                    'img/bottom-slider.png',
+                    'img/bottom-slider.png'
+                ]
+            },
+             {
+                image: 'img/card1.png',
+                title: 'День 1',
+                day: '15 июня',
+                text:  [
+                    'lorem'
+                ],
+                list: [
+                    'img/bottom-slider.png',
+                    'img/bottom-slider.png',
+                    'img/bottom-slider.png'
+                ]
+            }
+        ]
+    }
+
+ul.route-slider.slider
+    each routItem in routeList.items
+        +route-description(routItem)

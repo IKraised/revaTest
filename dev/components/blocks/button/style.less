@@ -1,0 +1,36 @@
+.button{
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #000000;
+    left: 19.73;
+    .list-reset;
+    cursor: pointer;
+    background-color: @yellowColor;
+    z-index: 1;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.4s ease-in;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    padding: 14px 37px 12px 19px;
+    svg {
+        position: absolute;
+        height: 13px;
+        right: 17px;
+        width: 13px;
+        fill: #000;
+        transition: all 0.4s ease-in;
+    }
+    &:hover {
+        color: #fff;
+        background-color: @blackColor;
+        svg {
+            fill: #fff;
+        }
+    }
+}

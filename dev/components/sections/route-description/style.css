@@ -1,0 +1,14 @@
+.section__route {
+  background-color: #ffffff;
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+.route__title {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 60px;
+}

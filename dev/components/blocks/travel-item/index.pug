@@ -1,0 +1,7 @@
+mixin travel-item(data)
+    .travel-item
+        .travel-item__image
+            +svg({
+                name: data.image
+            })
+        h3.travel-item__title=data.title

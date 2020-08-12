@@ -1,0 +1,24 @@
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+  padding: 0;
+}
+.navigation__item {
+  list-style-type: none;
+}
+.navigation__link {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease-in;
+}
+.navigation__link:hover {
+  color: #000000;
+}

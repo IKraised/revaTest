@@ -1,0 +1,25 @@
+.section__travel {
+  background-color: #ffffff;
+}
+.travel {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.travel__title {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.travel__subtitle {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  width: 817px;
+}

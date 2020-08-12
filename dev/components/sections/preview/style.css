@@ -1,0 +1,61 @@
+.section__preview {
+  background: url(../../../img/preview-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.preview {
+  padding-top: 130px;
+  position: relative;
+}
+.preview__title {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 90px;
+  color: #ffffff;
+  /* на процентах em rem vw */
+  width: 906px;
+}
+.preview-subtitle {
+  margin-top: 45px;
+  /* на процентах em rem vw */
+  max-width: 350px;
+  margin-left: 342px;
+  position: relative;
+}
+.preview-subtitle::after {
+  content: url(../../../img/preview-animation-line.svg);
+  position: absolute;
+  top: 52px;
+  right: -175px;
+  animation: animdash 3s infinite 6s;
+  transform-origin: left;
+  width: 100%;
+}
+.preview-subtitle__title {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.preview-subtitle__text {
+  font-family: Muller;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 12px;
+  color: #ffffff;
+}
+.preview__image {
+  position: absolute;
+  bottom: -175px;
+  right: -350px;
+}
+.preview__image img {
+  width: 860px;
+  height: 723.36px;
+}

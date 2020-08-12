@@ -1,0 +1,32 @@
+include ../travel-item/index.pug
+
+-
+    var list = [
+        {
+            title: '2000 км дорог', 
+            image: 'first'
+        }
+    ]
+
+ul.travel__list
+    -for(let i = 0; i < list.length; i++)
+        li.travel__item
+            +travel-item(i)
+    //- li.travel__item
+    //-     .travel__item_img
+    //-         +svg({
+    //-             name: 'first'
+    //-         })
+    //-     .travel__item_text 2000 км дорог
+    //- li.travel__item
+    //-     .travel__item_img
+    //-         img(src="../../../img/travel-city.svg", alt="city")
+    //-     .travel__item_text 12 городов края
+    //- li.travel__item
+    //-     .travel__item_img
+    //-         img(src="../../../img/travel-service.svg", alt="service")
+    //-     .travel__item_text 1 сломанный багажник
+    //- li.travel__item
+    //-     .travel__item_img
+    //-         img(src="../../../img/travel-calendar.svg", alt="calendar")
+    //-     .travel__item_text  13 дней<br> пути

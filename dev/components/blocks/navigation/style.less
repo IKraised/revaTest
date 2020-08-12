@@ -1,0 +1,41 @@
+.navigation{
+    &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .list-reset;
+    }
+    &__item{
+        margin-right: 40px;
+    }
+    &__link{
+        font-style: italic;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        // margin-right: 40px;
+        cursor: pointer;
+        text-decoration: none;
+        color: @whiteColor;
+        transition: all 0.3s ease-in;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -10%;
+            width: 0;
+            height: 10px;
+            z-index: -1;
+            background-color: @yellowColor;
+            transform: skewX(-30deg);
+            transition: all 0.3s ease-in;
+        }
+        &:hover{
+            color: @blackColor;
+        }
+        &:hover::after{
+            animation: animNavLink 0.3s ease-in forwards;
+        }
+    }   
+}   

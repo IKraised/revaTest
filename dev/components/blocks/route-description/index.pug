@@ -1,0 +1,21 @@
+mixin route-description(data)
+    li.slider-card
+        .slider-card__img
+            img(src=data.image)
+        .slider-card__item
+            .slider-card__item-top
+                .slider-card__title=data.title
+                .slider-card__title.slider-card__title_small=data.day          
+            .slider-card__item-middle   
+                if data.text.length > 1
+                    each textItem in data.text
+                        p=textItem
+                else 
+                    p=data.text        
+            ul.slider-card__item-bottom.bottom-slider
+                each sliderPreview in data.list
+                    li.bottom-slider__item
+                        img(src=sliderPreview)
+        .slider-card__footer
+            .slider-card__footer-left Подробнее
+            .slider-card__footer-right Посмотреть на STRAVA
